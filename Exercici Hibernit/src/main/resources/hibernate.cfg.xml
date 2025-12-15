@@ -1,0 +1,24 @@
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Connexió -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/esports</property>
+        <property name="hibernate.connection.username">bilal</property>
+        <property name="hibernate.connection.password">1234</property>
+
+        <!-- Dialecte -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <!-- Debug -->
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">false</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- ENTITATS -->
+        <mapping class="esport.ex1.Atleta"/>
+        <mapping class="esport.ex1.Esport"/>
+
+    </session-factory>
+</hibernate-configuration>

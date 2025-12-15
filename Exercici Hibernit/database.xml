@@ -1,0 +1,7 @@
+<cb-config>
+    <host>localhost</host>
+    <port>5433</port>
+    <user>bilal</user>
+    <password>1234</password>
+    <database>esports</database>
+</cb-config>
